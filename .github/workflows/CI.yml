@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main  # ou master, selon votre configuration
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Une modification a été poussée !"
